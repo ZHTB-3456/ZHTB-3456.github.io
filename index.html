@@ -2,12 +2,58 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的个人网站</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>你好，世界！</h1>
-    <p>欢迎来到我的第一个个人网站。这里是使用 GitHub Pages 搭建的。</p>
-    <h2>我将在这里分享我的趣事<h2>
+    <div id="toggleIcon" onclick="menuToggle()"></div>
+    <div id="menu-overlay">
+        <ul style="list-style-type: square;">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#Studio">Studio</a></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        function menuToggle() {
+            var nav = document.getElementById('menu-overlay');
+            nav.classList.toggle('active');
+            var nav = document.getElementById('toggleIcon');
+            nav.classList.toggle('active');
+        }
+        ;
+    </script>
+        <div id="home" class="page-section">
+        <h1>首页 / Home</h1>
+        <p>这是首页内容。</p>
+    </div>
+    <div id="about" class="page-section">
+        <h1>关于我 / About</h1>
+        <p>这是关于我的内容。</p>
+    </div>
+    <div id="projects" class="page-section">
+        <h1>项目展示 / Projects</h1>
+        <p>这是项目展示的内容。</p>
+    </div>
+    <div id="contact" class="page-section">
+        <h1>联系我 / Contact</h1>
+        <p>这是联系我的内容。</p>
+    </div>
+    <div id="Services" class="page-section">
+        <h1>服务支持 / Services</h1>
+        <p>这是服务支持的内容。</p>
+    </div>
+    <div id="blog" class="page-section">
+        <h1>博客 / Blog</h1>
+        <p>这是博客内容。</p>
+    </div>
+    <div id="Studio" class="page-section">
+        <h1>我的工作室 / Studio</h1>
+        <p>这是工作室介绍内容。</p>
+    </div>
 </body>
 </html>
